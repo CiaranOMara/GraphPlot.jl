@@ -217,7 +217,7 @@ function gplot(g::AbstractGraph{T},
             compose(context(), texts, fill(nodelabelc), stroke(nothing), fontsize(nodelabelsize)),
             compose(context(), nodes, fill(nodefillc), stroke(nodestrokec), linewidth(nodestrokelw)),
             compose(context(), edgetexts, fill(edgelabelc), stroke(nothing), fontsize(edgelabelsize)),
-            compose(context(), arrows, stroke(edgestrokec), linewidth(edgelinewidth)),
+            compose(context(), arrows, stroke(edgestrokec), fill(nothing), linewidth(edgelinewidth)),
             compose(context(), lines, stroke(edgestrokec), fill(nothing), linewidth(edgelinewidth)))
 end
 
